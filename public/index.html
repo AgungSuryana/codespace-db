@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD User Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CRUD User Management</h1>
+
+    <!-- Form untuk Menambah Pengguna -->
+    <h2>Add User</h2>
+    <form id="addUserForm">
+        <input type="text" id="no_telp" placeholder="No Telp" required>
+        <input type="text" id="Nama_pelanggan" placeholder="Nama Pelanggan" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Add User</button>
+    </form>
+
+    <!-- Menampilkan Daftar Pengguna -->
+    <h2>Users List</h2>
+    <ul id="userList"></ul>
+
+    <!-- Form untuk Mengedit Pengguna -->
+    <h2>Edit User</h2>
+    <form id="editUserForm" style="display: none;">
+        <!-- Menggunakan atribut readonly untuk no_telp agar tidak diubah -->
+        <input type="text" id="editNoTelp" placeholder="No Telp" readonly required>
+        <input type="text" id="editNamaPelanggan" placeholder="Nama Pelanggan" required>
+        <input type="password" id="editPassword" placeholder="Password" required>
+        <button type="submit">Update User</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
